@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | MathsG</title>
+    <style>
+        :root { --primary-color: #0A2647; --secondary-color: #144272; --bg-color: #f4f7f9; --text-dark: #2c3e50; }
+        
+        /* Fixed: Ensuring page flows correctly so nothing is cut off */
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.8; 
+            color: var(--text-dark); 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background-color: var(--bg-color); 
+        }
+
+        .container { 
+            background: #ffffff; 
+            padding: 40px; 
+            border-radius: 16px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+            border: 1px solid #e1e8ed; 
+            margin-bottom: 20px;
+        }
+
+        h1 { color: var(--primary-color); font-size: 2.2rem; border-bottom: 4px solid var(--secondary-color); padding-bottom: 15px; margin-bottom: 30px; }
+        h2 { color: var(--primary-color); margin-top: 35px; font-size: 1.5rem; display: flex; align-items: center; }
+        p { margin-bottom: 20px; text-align: justify; }
+
+        /* Animated Cards */
+        .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 30px 0; }
+        .feature-card { 
+            background: #fcfcfc; 
+            border: 1px solid #edf2f7; 
+            padding: 20px; 
+            border-radius: 10px; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
+        .feature-card:hover { 
+            transform: translateY(-5px); 
+            border-color: var(--secondary-color);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .feature-card strong { color: var(--secondary-color); display: block; margin-bottom: 8px; font-size: 1.1rem; }
+
+        .disclaimer-section { background: #fff9f0; border: 1px dashed #FEB2B2; padding: 25px; border-radius: 12px; margin-top: 40px; }
+        .disclaimer-section h3 { color:  #C53030; margin-top: 0; }
+        .source-box { background: #ebf5ff; border-radius: 8px; padding: 20px; margin-top: 20px; border: 1px solid #cfe2ff; }
+        .source-link { color: #0056b3; font-weight: 600; text-decoration: underline; }
+
+        /* Footer: Clearly separated and visible */
+        .footer { 
+            text-align: center; 
+            padding: 30px 10px; 
+            font-size: 0.9rem; 
+            color: #7f8c8d; 
+            border-top: 1px solid #eee; 
+            background: #fff;
+            border-radius: 12px;
+        }
+
+        @media (max-width: 600px) { .feature-grid { grid-template-columns: 1fr; } .container { padding: 20px; } }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>About MathsG</h1>
+    
+    <p>Welcome to <strong>MathsG</strong>. Our primary objective is to bridge the gap between traditional learning and modern competitive requirements. By focusing on <strong>"Human Calculator"</strong> methodologies, we equip students with the mental agility to solve complex mathematical problems with unprecedented speed and precision.</p>
+
+    <h2>Our Core Philosophy</h2>
+    <p>We believe that every student has the potential to excel in Mathematics. Our app provides proprietary tricks and formulas that simplify arithmetic operations, algebraic equations, and geometric concepts, making learning both efficient and enjoyable.</p>
+
+    <div class="feature-grid">
+        <div class="feature-card">
+            <strong>🚀 Speed Math Mastery</strong>
+            Exclusive mental math techniques designed to reduce calculation time by up to 80%.
+        </div>
+        <div class="feature-card">
+            <strong>📚 Maharashtra Board Support</strong>
+            Curated, student-friendly notes specifically tailored for easy comprehension of the state syllabus.
+        </div>
+        <div class="feature-card">
+            <strong>📊 Progress Analytics</strong>
+            Advanced tracking systems with interactive quizzes to monitor learning milestones.
+        </div>
+        <div class="feature-card">
+            <strong>🏆 Gamified Learning</strong>
+            Unlock exclusive milestone badges and earn achievement certificates as you master new skills.
+        </div>
+    </div>
+
+    <h2>Source of Educational Content</h2>
+    <div class="source-box">
+        <p>In our commitment to accuracy and academic standards, the curriculum-specific materials for the Maharashtra State Board section are developed in reference to the official textbooks provided by <strong>eBalbharati</strong>.</p>
+        <p>Official Reference: <a class="source-link" href="https://www.ebalbharati.in/" target="_blank">ebalbharati.in</a></p>
+    </div>
+
+    <div class="disclaimer-section">
+        <h3>Official Disclaimer</h3>
+        <p><strong>Independent Status:</strong> MathsG is an independently developed educational resource. It is <strong>NOT</strong> an official affiliate of, nor is it endorsed or authorized by, the Maharashtra State Board (MSBSHSE) or any government department.</p>
+        <p><strong>Certification & Badges:</strong> The "Human Calculator" certificates and badges issued within this app are intended for motivational and academic tracking purposes only. They do not constitute official government certifications.</p>
+        <p><strong>No Government Representation:</strong> This app does not represent any government entity.</p>
+    </div>
+</div>
+
+<div class="footer">
+    © 2026 | <strong>MathsG</strong> | Developed for Educational Excellence | Not a Government Entity
+</div>
+
+</body>
+</html>
